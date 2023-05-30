@@ -1,0 +1,229 @@
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Nanum+Gothic&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color:inherit;}
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  color:#121212;
+  font-size:16px;
+  line-height:1.5;
+  min-width:1000px;
+}
+.wrap{
+  width:1000px;
+  margin:auto;
+  padding:100px 10px;
+}
+/* header */
+header{
+  width:100%;
+  background:#fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+header>.wrap{
+  /*header안 쪽의 여백만 수정*/
+  padding:24px 10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+/* 로고 */
+.logo{
+  font-family:"Katibeh"; font-size:42px;
+  letter-spacing: 2px;
+  margin-top:-24px;
+}
+/* 메뉴 */
+.menuGroup{
+  display:flex;
+}
+.menuGroup>ul{
+  display:flex;
+}
+.gnb>li{margin:0 20px;}
+.icon>li{margin:0 5px; font-size:18px; margin-top:-2px;}
+.gnb>.active{color:orange;}
+/* section 요소의 h1요소 */
+section h1{
+  font-family: Georgia, 'Nanum Gotihc';
+  font-size:60px;
+  line-height:1.2;
+  font-weight:normal;
+}
+/* #banner */
+#banner{
+  min-width:1000px;
+  background:url(../img/main.jpg) center/cover;
+  color:#f1f1f1;
+}
+/* +아이콘 */
+.wrap>h1>i{color:orange; padding-left:20px;}
+
+#banner h2{
+  font-size:30px;
+  text-indent:5px;
+}
+/* banner의 링크버튼 요소 */
+#banner .btn{
+  display:flex;
+  margin-top:40px;
+}
+#banner .btn a{
+  margin-right:20px;
+  padding:8px 34px;
+  border:2px solid #f1f1f1;
+  transition:all 0.3s;
+}
+#banner .btn a:hover{
+  border-color:orange;
+  color:orange;
+}
+
+/* #work */
+#work{
+  min-width:1000px;
+  background-color:#fcd307;
+}
+#work>.wrap{
+  padding:100px 0;
+  width:800px;
+  display:flex;
+}
+#work .box{
+  width:200px;
+  text-align:center;
+}
+#work .box img{border-radius:50%;}
+#work .box h3{
+  margin-top:20px;
+}
+
+/* #about */
+#about h1 i{
+  padding-right:20px;
+  color:black;
+}
+#about>.wrap>p{
+  font-size:18px;
+  text-indent:70px; /*들여쓰기*/
+}
+#about .member{
+  margin:60px 0;
+  display:flex;
+  text-align: center;
+  justify-content:center;
+}
+#about .member li{
+  margin:0 25px;
+}
+#about .member li h3{
+  margin-top:20px;
+  letter-spacing: 6px;
+  font-size:16px;
+}
+#about .member li p{
+  color:#666;
+  letter-spacing:2px;
+}
+#about .txt{
+  display:flex;
+}
+.txt>li{
+  margin:0 25px;
+  text-align:justify; /* text를 양쪽으로 꽉 차게 정렬 */
+}
+
+/* #contact */
+
+#contact{
+  background-color:#333;
+  color:#f1f1f1;
+}
+#contact>.wrap>h1>i{color:#f1f1f1; padding-right:20px;}
+#contact > .wrap > p{
+  font-size:18px;
+  text-indent:70px;
+}
+#contact .container{
+  margin-top:80px;
+  display:flex;
+  justify-content: space-between;
+}
+#contact .map > p{
+  margin-bottom:40px;
+  line-height:2;
+  padding-left:20px;
+}
+#contact .map i{
+  font-size:35px;
+  padding-right:10px;
+  padding-bottom:10px;
+  vertical-align:middle;
+}
+#contact .contact h2{
+  font-size:18px;
+  font-weight:normal;
+  margin-bottom:20px;
+}
+.contact form{
+  display:flex;
+}
+.contact form .box{
+  width:250px;
+  margin-right:5px;
+}
+input[type=text]{
+  width:100%;
+  height:40px;
+  margin-bottom:5px;
+  border:none;
+  outline:none;
+  padding:10px;
+}
+.contact form textarea{
+  width:250px;
+  height:130px;
+  border:none;
+  outline:none;
+  padding:10px;
+  resize:none;
+}
+input[type=submit]{
+  border:none;
+  background:#f9be20;
+  color:#f1f1f1;
+  padding:6px 24px;
+  font-weight:bold;
+  cursor:pointer;
+}
+input[type=submit]:hover{
+  background-color:#f5ae16;
+}
+.contact hr{
+  margin:50px 0;
+}
+
+/* footer */
+footer > .wrap{
+  padding:40px 10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+footer span{
+  margin-right:30px;
+}
+footer>.wrap>p>a{
+  margin-right:5px;
+  background-color:#ff9;
+}
+.icon{display:flex;}
+.icon>li{
+  margin:0 5px;
+  font-size:18px;
+  margin-top:-2px;
+}
+/* 스크롤바를 가려놓음  */
+::-webkit-scrollbar{display:none;}
